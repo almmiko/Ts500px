@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>React / Redux / TypeScript - starter-kit</title>
+  <link rel="stylesheet" href="loader-styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/blaze@3.2.0">
+</head>
+
+<body>
+  <div id="app-container">
+    <div class="loader-container">
+      <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+      </div>
+    </div>
+  </div>
+  <!-- body bottom scripts -->
+  <!-- loading-app:start -->
+  <script src="shim.min.js"></script>
+  <script src="system.js"></script>
+  <script src="jspm.config.js"></script>
+  <script src="vendor.prod.js"></script>
+  <script>
+    // load main module of your app with SystemJS
+    SystemJS.production = true;
+    SystemJS.import('app.js');
+  </script>
+  <!-- loading-app:end -->
+</body>
+
+</html>
